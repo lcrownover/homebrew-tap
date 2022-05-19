@@ -5,43 +5,43 @@
 class MultisshGo < Formula
   desc ""
   homepage "https://github.com/lcrownover/multissh-go"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.0/multissh-go_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "75b0e3bc49cafaa6f7b1879fc6ff0f5d94c4cf510ce263ded3a50420a8a859ff"
+      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.1/multissh-go_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "3198fdca8d24565a7265e17af6af991dd8e9677e29a4d6f144cad52d99a78423"
 
       def install
-        bin.install "multissh-go"
+        bin.install "multissh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.0/multissh-go_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "ecdf54b5709aa7b545d25bf76bb125e97998d1c883bbdb1a5393c24a8526be02"
+      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.1/multissh-go_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "368a3d51222e36f51d09c5b970aa6d3fa34b85493b99c79fb625c2c74adbb4e5"
 
       def install
-        bin.install "multissh-go"
+        bin.install "multissh"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.0/multissh-go_0.1.0_Linux_arm64.tar.gz"
-      sha256 "47204d02d65883ef8edc91fbf83490cb273935b36fa58d69e522bfdfd2ad25e0"
+      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.1/multissh-go_0.1.1_Linux_arm64.tar.gz"
+      sha256 "cacb95336e5b8d28d9a6aad157ccece161e0f9bf7b8ae91402e4129f463f3e46"
 
       def install
-        bin.install "multissh-go"
+        bin.install "multissh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.0/multissh-go_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "a3750ac7ad37a9055db83a5283020aa9518e2bc5bd96473365eef882da4023ab"
+      url "https://github.com/lcrownover/multissh-go/releases/download/v0.1.1/multissh-go_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "94823d489be328fff4c1c886a83491d7233f6570d7c2fc05c75e176d71df02cd"
 
       def install
-        bin.install "multissh-go"
+        bin.install "multissh"
       end
     end
   end
